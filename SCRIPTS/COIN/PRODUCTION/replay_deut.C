@@ -82,6 +82,8 @@ void replay_deut(Int_t RunNumber = 0, Int_t MaxEvent = 0, TString ftype="") {
     cmd = Form("mkdir -p HISTOGRAMS/%s/ROOT", ftype.Data());
     gSystem->Exec(cmd); // create study type dir. if it doesn't exist
   }
+  //gSystem->RedirectOutput("/home/goodfortune/Physics_analysis/deut_offline_replay/ROOTfiles/prod/mylog.txt");
+
 
   
   const char* ROOTFileNamePattern = "ROOTfiles/%s/deut_replay_%s_%d_%d.root";
@@ -265,7 +267,8 @@ void replay_deut(Int_t RunNumber = 0, Int_t MaxEvent = 0, TString ftype="") {
 
   // ---------------------------------
   // electrons in SHMS, protons in HMS
-  // ---------------------------------
+  // ---------------------------------// Redirect output to mylog.txt before any replay-related output
+   //gSystem->RedirectOutput("/home/goodfortune/Physics_analysis/deut_offline_replay/ROOTfiles/prod/mylog.txt");
   // Add physics module to calculate primary (scattered electrons) beam kinematics
   THcPrimaryKine* pkin_primary = new THcPrimaryKine("P.kin.primary", "SHMS Single Arm Kinematics", "P", "P.rb");
   gHaPhysics->Add(pkin_primary);
@@ -382,7 +385,7 @@ void replay_deut(Int_t RunNumber = 0, Int_t MaxEvent = 0, TString ftype="") {
 
   // Start the actual analysis.
   analyzer->Process(run);
-
+ 
   // Create report file from template
   // C.Y. (for now we just have 1 template file, but this can be expanded to: deut_ftype.template (e.g. deut_heep.template, etc)
   TString REPORT_FileName=Form("REPORT_OUTPUT/%s/deut_%s_%d_%d.report", ftype.Data(), ftype.Data(), RunNumber, MaxEvent);
@@ -450,5 +453,5 @@ void replay_deut(Int_t RunNumber = 0, Int_t MaxEvent = 0, TString ftype="") {
 
  stop:
   cout << "Exiting Now . . ." << endl;
-
+ // gSystem->RedirectOutput("mylog.txt");
 }
