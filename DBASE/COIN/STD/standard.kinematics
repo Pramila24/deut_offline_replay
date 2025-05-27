@@ -757,10 +757,13 @@ ppartmass = 0.000511
 20841 - 20845
 gpbeam = 10.542                       
 gtargmass_amu =  1.00794                
-htheta_lab = -33.344                    
-ptheta_lab = 14.153                      
-hpcentral = 3.499                        
-ppcentral = 8.55                     
+#htheta_lab = -33.344  
+htheta_lab = -33.340   #Floor Value updated on 03/28/2025                    
+#ptheta_lab = 14.153     
+ptheta_lab = 14.145    #Floor Value updated on 03/28/2025                  
+hpcentral = 3.499                       
+ppcentral = 8.55   
+#ppcentral = 7.9425       #Kf_peak for -8 run = 7.9425                  
 hpartmass = 0.93827231                 
 ppartmass = 0.000511  
 
@@ -768,8 +771,10 @@ ppartmass = 0.000511
 20846 - 20850
 gpbeam = 10.542                       
 gtargmass_amu =  1.00794                
-htheta_lab = -35.75                    
-ptheta_lab = 12.94                      
+#htheta_lab = -35.75  
+htheta_lab = -35.750   #Floor Value updated on 03/28/2025                    
+#ptheta_lab = 12.94      
+ptheta_lab = 12.940   #Floor Value updated on 03/28/2025                 
 hpcentral = 3.145                       
 ppcentral = 8.55                     
 hpartmass = 0.93827231                 
@@ -779,9 +784,11 @@ ppartmass = 0.000511
 20851 - 20857
 gpbeam = 10.542                       
 gtargmass_amu =  1.00794                
-htheta_lab = -38.549                    
-ptheta_lab = 11.705
-hpcentral = 2.783                     
+#htheta_lab = -38.549    
+htheta_lab = -38.540   #Floor Value updated on 03/28/2025              
+#ptheta_lab = 11.705
+ptheta_lab = 11.700    #Floor Value updated on 03/28/2025 
+hpcentral = 2.783                    
 ppcentral = 8.55                     
 hpartmass = 0.93827231                 
 ppartmass = 0.000511 
@@ -790,8 +797,10 @@ ppartmass = 0.000511
 20858 - 20860
 gpbeam = 10.542                       
 gtargmass_amu =  1.00794                
-htheta_lab = -41.812                    
-ptheta_lab = 10.435
+#htheta_lab = -41.812  
+htheta_lab = -41.795  #Floor Value updated on 03/28/2025                    
+#ptheta_lab = 10.435
+ptheta_lab = 10.430    #Floor Value updated on 03/28/2025 
 hpcentral = 2.417                     
 ppcentral = 8.55                     
 hpartmass = 0.93827231                 

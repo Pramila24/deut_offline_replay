@@ -52,15 +52,19 @@ hphi_offset = 0.0
 
 ;; HMS Centeral Momentum (P) Offset (10.6 GeV Kaon-LT Data)
 
-hpcentral_offset = -0.100
+;hpcentral_offset = -0.100
 
 ;; HMS Central Angle (Theta) Offset (10.6 GeV Kaon-LT Data)
 
-hthetacentral_offset = 0.0010
+;hthetacentral_offset = 0.0010
 
 ;; HMS Out-of-Plane (OOP) Offset (10.6 GeV Kaon-LT Data)
 
-h_oopcentral_offset = 0.00251
+;h_oopcentral_offset = 0.00251
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;; (centroid_alignment documentation follow up 04/28/2025)
 
-
+hpcentral_offset = 0.0   ;  
+; htheta_lab=htheta_lab + hthetacentral_offset/degree 
+hthetacentral_offset = 0.  ;   (rad)  
+h_oopcentral_offset = 0.  ; (rad) 
