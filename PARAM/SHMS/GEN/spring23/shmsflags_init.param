@@ -58,11 +58,11 @@ ppcentral_offset = -0.35        ; (Offset calculated from Missing energy on 04/0
 ;; SHMS Central Angle (Theta) Offset (All Kaon-LT Data)
 
 ;pthetacentral_offset = 0.0011
-;pthetacentral_offset = 0.0     ; (With floor values for theta on 03/28/2025)
-pthetacentral_offset = 0.00015    ; (With floor values for theta on 04/3/2025)
+pthetacentral_offset = 0.0     ; (With floor values for theta on 03/28/2025)
+;pthetacentral_offset = 0.00015    ; (With floor values for theta on 04/3/2025)
 
 ;; SHMS Out-of-Plane (Phi) Offset (All Kaon-LT Data)
 
 ;p_oopcentral_offset = -0.00011
-;p_oopcentral_offset = 0.0    ; (With floor values for theta on 03/28/2025)
-p_oopcentral_offset = 0.00048    ; (With floor values for theta using for Oop on 04/03/2025)
+ p_oopcentral_offset = 0.0    ; (With floor values for theta on 03/28/2025)
+;p_oopcentral_offset = 0.00048    ; (With floor values for theta using for Oop on 04/03/2025)
