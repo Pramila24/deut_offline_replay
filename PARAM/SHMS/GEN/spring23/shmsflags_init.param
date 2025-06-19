@@ -17,19 +17,42 @@ pdelta_offset = 0.0;   (%)   hdelta_tar = hdelta_tar + hdelta_offset
 
 ; relative offsets 
 ; ptheta_offset = -2.0e-4 ; (rad) determined from thp_calc(Eb, the, k)-thp_meas for run 16962
-ptheta_offset = 0.
+
+
+
+
+;Running replays for Walker
+ptheta_offset = 0.0
 pphi_offset   = 0.0 ; (rad) hxp_tar = hxp_tar + hphi_offset 
 
 
 ; The following offsets are applied to the central kinematic variables
 ;      ptheta_lab=htheta_lab + pthetacentral_offset/degree 
 
-pthetacentral_offset = 0.0
-p_oopcentral_offset = 0.
+;pthetacentral_offset = 0.0
+;pthetacentral_offset = 0.0011 ;(P.Pokhrel trying Vijay Kumar offset parameters on 01/16/2025)
+;pthetacentral_offset = 0.0 ;(P.Pokhrel trying HMS opt. with no offsets on 02/6/2025)
+
+
+
 ;p_oopcentral_offset = 0.0008   ; to align Pmy
 
 
 ; May 17, 2023: using W offset from run 16036 / 16962 
 ; ppcentral = ppcentral * ( 1. + ppcentral_offset / 100. )  = 0.9979
 ; ppcentral_offset = -0.21
-ppcentral_offset = 0.
+;ppcentral_offset = 0.0
+;ppcentral_offset = -0.200 ;(P.Pokhrel trying Vijay Kumar offset parameters on 02/6/2025)
+;ppcentral_offset = 0.0 ;(P.Pokhrel trying HMS opt. with no offset parameters on 02/06/2025)
+
+; feb 13, 2025: using deltaEm offset from run 20841,20846,20851,20858,20861,20869
+; ppcentral = ppcentral * ( 1. + ppcentral_offset / 100. )  = 0.997
+;ppcentral_offset = -0.3 ;(P.Pokhrel using SHMS offset obtained from deltaEm parameters from SHMS opt. on 02/13/2025)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;; (centroid_alignment documentation follow up)
+
+ppcentral_offset = 0.0 ; (Using second method of offset calculation 04/28/2025)
+p_oopcentral_offset = 0.0
+pthetacentral_offset = 0.0 ;(Obtained from difference of calculated and measured values of HMS central angle)
+;ptheta_offset = -0.004217   ; (rad) determined from thp_calc(Eb, the, k)-thp_meas for heep runs from -8 to +4 delta
